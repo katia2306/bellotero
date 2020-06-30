@@ -3,7 +3,7 @@ import { Router, Switch, Route } from "react-router";
 import history from "./history";
 import NavBar from "./NavBar";
 import Testimonal from "./Testimonal";
-import Configurator from "./Calculator";
+import Calculator from "./Calculator";
 
 class App extends PureComponent {
   render() {
@@ -14,7 +14,7 @@ class App extends PureComponent {
           <Switch>
             <Route exact path="/" component={Testimonal} />
             <Route exact path="/page-1" component={Testimonal} />
-            <Route exact path="/page-2" component={Configurator} />
+            <Route exact path="/page-2" component={Calculator} />
           </Switch>
         </Router>
       </>
