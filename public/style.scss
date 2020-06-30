@@ -1,0 +1,70 @@
+$break-sm: 640px;
+$break-md: 768px;
+$break-lg: 1024px;
+$break-xl: 1280px;
+
+$primary-color: #071eb3;
+$ice-blue: #f9faff;
+$white: #ffffff;
+
+@font-face{
+  font-family: "Roboto-Regular";
+  src: url(../src/fonts/Roboto-Regular.ttf);
+}
+
+@font-face{
+  font-family: "Roboto-Medium";
+  src: url(../src/fonts/Roboto-Medium.ttf);
+}
+
+@font-face{
+  font-family: "Roboto-Bold";
+  src: url(../src/fonts/Roboto-Bold.ttf);
+}
+
+@font-face{
+  font-family: "Roboto-Black";
+  src: url(../src/fonts/Roboto-Black.ttf);
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto-Medium", sans-serif;
+  background-color: $ice-blue;
+}
+
+#root {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+.components-container {
+  margin-left: 2rem;
+  margin-top: 4rem;
+  margin-right: 2rem;
+}
+
+.title {
+  background-color: $primary-color;
+  color: $white;
+  padding: 0.5rem 0;
+  width: fit-content;
+  font-size: 36px;
+  font-family: Roboto-Black;
+}
+
+@media only screen and (min-width: $break-lg) { 
+  .components-container {
+    margin-left: 8rem;
+    margin-top: 6rem;
+    margin-right: 8rem;
+  }
+}
+
+@media only screen and (min-width: $break-xl) {
+  .components-container {
+    margin-left: 8rem;
+    margin-top: 6rem;
+  }
+}
+

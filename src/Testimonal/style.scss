@@ -1,0 +1,119 @@
+@import "../../public/style.scss";
+
+$gray: #a5a5a5;
+
+.reviews {
+  font-family: Roboto-Black;
+  margin-top: 4rem;
+  margin-right: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: $white;
+  padding: 2rem;
+}
+
+.review-information {
+  width: 100%;
+}
+
+.review-name {
+  font-size: 32px;
+  display: block;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  font-style: normal;
+  letter-spacing: normal;
+}
+
+.review-position {
+  font-family: Roboto-Regular;
+  font-size: 14px;
+  color: $gray;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+.comment {
+  width: 100%;
+  font-family: Roboto-Bold;
+  font-size: 24px;
+  line-height: 1.33;
+  letter-spacing: normal;
+}
+
+.options-div {
+  display: flex;
+  flex-direction: row;
+  margin-right: 1rem;
+  margin-left: 4rem;
+  margin-top: -3%;
+  width: 101%;
+  float: left;
+}
+
+.options {
+  display: flex;
+  flex-direction: row;
+  font-size: 32px;
+  color: $white;
+  background-color: $primary-color;
+  padding: 0.8rem 2rem;
+  margin-right: 0.2rem;
+}
+
+.button {
+  padding: 0.8rem 1rem;
+  color: $white;
+  font-size: 32px;
+  background-color: $primary-color;
+}
+
+@media only screen and (min-width: $break-md) { 
+  .reviews {
+    width: 86%;
+  }
+
+  .options-div {
+    width: 34%;
+    float: right;
+  }
+}
+
+@media only screen and (min-width: $break-lg) { 
+  .reviews {
+    width: 100%;
+  }
+
+  .review-information {
+    width: 40%;
+  }
+
+  .options-div {
+    margin-right: -9rem;
+    width: 40%;
+  }
+}
+
+@media only screen and (min-width: $break-xl) { 
+  .reviews {
+    flex-direction: row;
+    margin-right: 14rem;
+  }
+
+  .testimonal-container {
+    margin-right: 16rem !important;
+  }
+
+  .comment {
+    width: 60%;
+  }
+
+  .options-div {
+    margin-right: -10rem; 
+    margin-left: 0;
+    width: 27%;
+    float: right;
+  }
+}
